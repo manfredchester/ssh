@@ -1,3 +1,13 @@
+package main
+
+import (
+	"bytes"
+	"fmt"
+	"net"
+
+	"golang.org/x/crypto/ssh"
+)
+
 func SSHMaker() {
 	var stdout, stderr bytes.Buffer
 	session, err := SSHConnet("root", "1qaz@WSX", "10.128.0.180", "22")
